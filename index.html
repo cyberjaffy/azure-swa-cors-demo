@@ -12,7 +12,7 @@
 
   <script>
     document.getElementById('callApi').onclick = () => {
-      fetch('https://corstest-bhh6gwhthxhwctcj.azurewebsites.net/api/hello')
+      fetch('https://corstest-bhh6gwhthxhwctcj.centralus-01.azurewebsites.net/api/hello')
         .then(res => res.json())
         .then(data => document.getElementById('result').textContent = JSON.stringify(data, null, 2))
         .catch(err => document.getElementById('result').textContent = err);
